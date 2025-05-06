@@ -17,6 +17,8 @@ The designs were created to the following widths:
 - Slate 500: hsl(216, 15%, 48%)
 - Slate 900: hsl(218, 44%, 22%)
 
+
+
 ## Typography
 
 ### Body Copy
