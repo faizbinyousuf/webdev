@@ -26,6 +26,8 @@ body {
   border-radius: 20px;
   background-color: white;
   padding: 15px;
+  border: 1px solid var(--gray-dark);
+  box-shadow: 10px 10px;
 }
 .card img {
   width: 100%;
