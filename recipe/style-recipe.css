@@ -1,0 +1,175 @@
+:root {
+  --bg-color: #eee1d4;
+  --purple: #672944;
+  --grey-font: #6b6b6b;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Figtree", sans-serif;
+  min-height: 100vh;
+}
+
+.card {
+  width: 45vw;
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "Young Serif", serif;
+  margin: 20px 0px;
+}
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--grey-font);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.preparation-container {
+  background-color: #fff7fc;
+  padding: 20px;
+  border-radius: 12px;
+}
+.preparation-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--purple);
+  margin-bottom: 15px;
+}
+li::marker {
+  color: var(--purple);
+}
+
+.preparation-container ul {
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+li {
+  padding-left: 10px;
+  color: var(--grey-font);
+  margin: 10px 0px;
+}
+
+.time {
+  font-weight: 500;
+}
+.ingredients-title {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "Young Serif", serif;
+  margin: 20px 0px;
+  color: #734133;
+}
+.ingredients {
+  font-weight: 500;
+  font-size: 15px;
+  /* margin: 20px 15px; */
+  padding-left: 20px;
+}
+.ingredients li {
+  list-style: square;
+  /* font-size: 12px; */
+}
+.ingredients li::marker {
+  color: var(--purple);
+  font-size: 12px;
+}
+hr {
+  margin: 15px 0px;
+  height: 0px;
+  border: none;
+  border-top: 0.1px solid var(--grey-font);
+}
+
+.instructions ol {
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.instructions ol li::marker {
+  font-size: 12px;
+  font-weight: bold;
+}
+.nutri {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 25px;
+  color: var(--grey-font);
+}
+
+.nutrition-table {
+  width: 100%;
+  /* max-width: 500px; */
+  border-collapse: collapse;
+  background-color: white;
+
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.nutrition-table tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nutrition-table tr:last-child {
+  border-bottom: none;
+}
+
+.nutrition-table td {
+  /* padding: 10px 100px; */
+  padding: 10px 150px 10px 20px;
+  font-size: 16px;
+}
+
+.nutrition-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.nutrition-value {
+  color: #8b5d33;
+  font-weight: 600;
+
+  text-align: left;
+}
+
+/* .calorie {
+  font-weight: 600;
+  
+  color: var(--purple);
+  margin-right: 200px;
+  text-align: left;
+}
+.calories {
+  font-weight: 600;
+   
+  color: var(--grey-font);
+}
+
+.nutrition-item {
+  display: flex;
+  width: 100%;
+  margin-left: 30px;
+  justify-content: space-between;
+} */
