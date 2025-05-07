@@ -26,6 +26,7 @@ body {
 .card img {
   width: 100%;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .title {
@@ -83,12 +84,11 @@ li {
 .ingredients {
   font-weight: 500;
   font-size: 15px;
-  /* margin: 20px 15px; */
+
   padding-left: 20px;
 }
 .ingredients li {
   list-style: square;
-  /* font-size: 12px; */
 }
 .ingredients li::marker {
   color: var(--purple);
@@ -120,7 +120,7 @@ hr {
 
 .nutrition-table {
   width: 100%;
-  /* max-width: 500px; */
+
   border-collapse: collapse;
   background-color: white;
 
@@ -137,8 +137,7 @@ hr {
 }
 
 .nutrition-table td {
-  /* padding: 10px 100px; */
-  padding: 10px 150px 10px 20px;
+  padding: 10px 10px 10px 20px;
   font-size: 16px;
 }
 
@@ -154,22 +153,70 @@ hr {
   text-align: left;
 }
 
-/* .calorie {
-  font-weight: 600;
-  
-  color: var(--purple);
-  margin-right: 200px;
-  text-align: left;
-}
-.calories {
-  font-weight: 600;
-   
-  color: var(--grey-font);
+/* Media Queries for Responsive Design */
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  .preparation-container {
+    padding: 12px;
+  }
+
+  li {
+    padding-left: 2px;
+  }
+
+  .ingredients,
+  .instructions ol {
+    padding-left: 15px;
+  }
 }
 
-.nutrition-item {
-  display: flex;
-  width: 100%;
-  margin-left: 30px;
-  justify-content: space-between;
-} */
+/* Mobile */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0px;
+  }
+  .card {
+    width: 100%;
+    border-radius: 0px;
+    padding: 0px;
+  }
+  .card img {
+    border-radius: 0px;
+    width: 100%;
+    background-color: teal;
+    object-fit: fill;
+    padding: 0px;
+  }
+  .title {
+    padding: 15px;
+  }
+  .ingredients-title {
+    padding: 15px;
+  }
+  .ingredients {
+    padding: 15px;
+  }
+  .nutri {
+    padding: 15px;
+  }
+  .ingredients li {
+    margin-left: 15px;
+  }
+  .description {
+    padding: 15px;
+  }
+  .preparation-container {
+    padding: 15px;
+  }
+  .instructions {
+    padding: 15px;
+  }
+
+  .nutrition-table td {
+    padding: 6px 8px 6px 15px;
+  }
+}
